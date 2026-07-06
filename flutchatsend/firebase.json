@@ -1,0 +1,35 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "flutchatsend",
+          "appId": "1:1039684510728:android:920e5254e62c483037ddbd",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "flutchatsend",
+          "configurations": {
+            "android": "1:1039684510728:android:920e5254e62c483037ddbd",
+            "web": "1:1039684510728:web:1d3f0f70bc0078b637ddbd",
+            "windows": "1:1039684510728:web:7948bbcd06d41e4937ddbd"
+          }
+        }
+      }
+    }
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  }
+}
