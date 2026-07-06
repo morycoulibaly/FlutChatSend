@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   static const Color primaryColor = Color(0xFF1E1E1E);
@@ -13,23 +14,20 @@ class AppTheme {
   static const Color successColor = Color(0xFF00FF00);
 
   static final ThemeData lightTheme = ThemeData(
-    primaryColor: primaryColor,
-    accentColor: accentColor,
-    cardColor: cardColor,
-    backgroundColor: backgroundColor,
-    scaffoldBackgroundColor: backgroundColor,
-    textTheme: TextTheme(
-      textPrimaryColor: TextStyle(color: textPrimaryColor),
-      textSecondaryColor: TextStyle(color: textSecondaryColor),
-    ),
-    appBarTheme: AppBarTheme(
-      color: primaryColor,
-      iconTheme: IconThemeData(color: textPrimaryColor),
-      titleTextStyle: TextStyle(color: textPrimaryColor, fontSize: 20),
-    ),
-    buttonTheme: ButtonThemeData(
-      buttonColor: accentColor,
-      textTheme: ButtonTextTheme.primary,
-    ),
+    useMaterial3: true,
+    colorScheme: ColorScheme.light(
+      primary: primaryColor,
+      onPrimary: Colors.white,
+      secondary: secondaryColor,
+      onSecondary: Colors.white,
+      error: errorColor,
+      surface: backgroundColor,
+      onSurface: textPrimaryColor,
+      onBackground: textPrimaryColor,
+    )
+      textTheme: GoogleFonts.poppinsTextTheme().copyWith(
+    headlineLarge: GoogleFonts.poppins(
+  )
   );
+
 }
