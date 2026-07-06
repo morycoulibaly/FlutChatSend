@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FlutChatSend',
-      theme: AppTheme,lightTheme
+      theme: AppTheme.lightTheme,
       themeMode: ThemeMode.light,
       // Je crois que c'est à partir d'ici qu'on va faire les routes
       // de notre appli
       debugShowCheckedModeBanner: false,
-    )
+    );
   }
 }
